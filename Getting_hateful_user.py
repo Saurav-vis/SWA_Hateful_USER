@@ -124,6 +124,7 @@ predict_Y = reg.predict(test_X)
 
 predict_Y_new = []
 
+#type casting to int
 for i in predict_Y:
     predict_Y_new.append(int(i))
 
