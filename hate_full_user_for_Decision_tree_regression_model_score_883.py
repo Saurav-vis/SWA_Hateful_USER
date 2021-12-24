@@ -11,6 +11,7 @@ import pandas as pd
 #load dataset
 dataset = pd.read_csv(r'users_neighborhood_anon.csv')
 
+#dropping columns that are not useful
 dataset = dataset.drop(columns=('hate_neigh'))
 dataset = dataset.drop(columns=('normal_neigh'))
 dataset = dataset.drop(columns=('is_50'))
@@ -40,6 +41,8 @@ X_train_old,X_test_old,Y_train,Y_test = train_test_split(x,y,test_size=0.2,rando
 #reduce dimention
 from sklearn.decomposition import PCA
 pca = PCA(n_components=25)
+
+#training model
 X_train = pca.fit_transform(X_train_old)
 X_test = pca.transform(X_test_old)
 
