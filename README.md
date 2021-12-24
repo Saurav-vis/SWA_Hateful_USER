@@ -5,10 +5,10 @@ The link to a zip file for the data used in this project is here: https://drive.
 This dataset contains a network of 100k users, out of which ~5k were annotated as hateful or not.
 For each user, several content-related, network-related and activity related features were provided.
 
-#Content
+# Content
 users_anon_neighborhood.csv file with several features for each user as well as the avg for some features for their 1-neighborhood (ppl they tweeted). Notice that c_ are attributes calculated for the 1-neighborhood of a user in the retweet network (averaged out).
 
-#Attributes description
+# Attributes description
   hate :("hateful"|"normal"|"other")
   if user was annotated as hateful, normal, or not annotated.
 
